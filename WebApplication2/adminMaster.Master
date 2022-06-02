@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMaster.master.cs" Inherits="WebApplication3.adminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .omar{
+         text-align:center;
+         text-decoration:none;
+         color:black;
+        }
+        .auto-style2 {
+            width: 1302px;
+        }
+        .auto-style3 {
+            width: 1098px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <table class="auto-style2">
+            <tr>
+                <td class="auto-style3">
+                            <asp:HyperLink ID="HyperLink5" CssClass="omar" runat="server" NavigateUrl="~/userHome2.aspx" Font-Underline="False" Height="30px" Width="194px" ForeColor="Black" Target="ContentPlaceHolder1">show renting requests</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            <asp:HyperLink ID="HyperLink6" CssClass="omar" runat="server" NavigateUrl="~/MoviesDatabase.aspx" Font-Underline="False" Height="30px" Target="ContentPlaceHolder1">Movies Database</asp:HyperLink>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink7" CssClass="omar" runat="server" NavigateUrl="~/userDatabase.aspx" Font-Underline="False" Height="30px" Width="157px" Target="ContentPlaceHolder1">Saleeny users</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink8" CssClass="omar" runat="server" NavigateUrl="~/HomePage.aspx" Font-Underline="False" Height="30px" Width="157px" Target="ContentPlaceHolder1">Logout</asp:HyperLink>
+                </td>
+            </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
